@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+header {
+  background-image: url(./video.mp4) no-repeat;
+  background-position: center;
+  /* height: 26.5em; */
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    /* height: 50em; */
+  }
+}
