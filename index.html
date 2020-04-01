@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="banner">
+    <header>
         <nav class="navbar">
             <h1 id="logo">Proximity</h1>
 
@@ -24,18 +24,23 @@
                 </ul>
             </div>
         </nav>
-
-        <video autoplay muted loop src="Assets/Videos/video.mp4" type=video/mp4></video>
-
-        <div class="center-content">
-            <h1>We make people more valuable to brands</h1>
-            <i class="header-arrow">arrow-down</i>
-        </div>
     </header>
 
     <main>
-        <div class="content">
-            <section class="how-we-do-it">
+        <div class="video-banner">
+            <video autoplay muted loop id="myVideo">
+                <source src="Assets/Videos/video.mp4" type="video/mp4">
+                    your browser does not support the tag
+            </video>
+
+            <div class="center-content">
+                <h1>We make people more valuable to brands</h1>
+                <i class="header-arrow">arrow-down</i>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <section id="how-we-do-it">
                 <h5>how we do it</h5>
                 <h3>We use data-driven creativity to solve business problems</h3>
                 <img src="" alt="how we do it">
@@ -46,7 +51,7 @@
                     with precision and purpose.</p>
             </section>
 
-            <section class="business-problems">
+            <section id="business-problems">
                 <i class="gif">pencil</i>
                 <h5>business problems we've solved</h5>
                 <div class="cases">
@@ -66,17 +71,19 @@
             <a class="return-top-link" href="#">Return to top</a>
         </div>
     </main>
-
+   
     <footer>
-        <div class="copyright">
-            <small>&copy;proximity worldwide 2018. all right reserved.<span>Privacy statement.</span></small>
-        </div>
-
-        <div class="footer-social-links">
-            <span><a href="#">linkedin</a></span>
-            <span><a href="#">twitter</a></span>
-            <span><a href="#">facebook</a></span>
-        </div>
+        <div class="footer-wrapper">
+            <div class="copyright">
+                <small>&copy;proximity worldwide 2018. all right reserved.<span>Privacy statement.</span></small>
+            </div>
+    
+            <div class="footer-social-links">
+                <span><a href="#">linkedin</a></span>
+                <span><a href="#">twitter</a></span>
+                <span><a href="#">facebook</a></span>
+            </div>
+        </div>  
     </footer>
 </body>
 
