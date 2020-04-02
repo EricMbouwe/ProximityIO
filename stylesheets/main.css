@@ -27,7 +27,7 @@ img,video {
 /*COLORS*/
 /* :root {
   --primary: #fff;
-  --secondary: gray;
+  --secondary: #3b2143;
 } */
 
 /*FONTS*/
@@ -123,30 +123,40 @@ img,video {
 
 #how-we-do-it {
   position: relative;
-  padding-top: 1.5em;
+  padding-top: 4em;
   text-align: center;
 }
 
 #how-we-do-it h2 {
-  color: brown;
   padding: 0.5em;
   margin: 0.5em;
-  font-size: 0.9em;
+  font-size: 0.88em;
+  color: #ff0000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 #how-we-do-it h3 {
-  padding: 0.5em;
-  margin: 0.5em;
-  font-size: 1em;
+  padding-bottom: 2em;
+  margin-bottom: 0.5em;
+  font-size: 1.8em;
+  color: #3b2143;
+  font-weight: normal;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #how-we-do-it p {
   position: relative;
   top: -50px;
   padding: 1em;
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   background-color: #fff;
+  font-size: 1.3em;
+  color: #3b2143;
+  filter: blur(0.03em);
 }
 
 #business-problems {
@@ -161,11 +171,16 @@ img,video {
 }
 
 #business-problems h2 {
-  color: brown;
   padding: 1em;
   margin: 0.5em;
-  font-size: 0.9em;
+  font-size: 0.88em;
+  color: #ff0000;
+  align-self: center;
   text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 60%;
 }
 
 .cases {
@@ -175,9 +190,9 @@ img,video {
 
 .case {
   background-color: gray;
-  padding: 10em 1.5em 1.5em 1.5em;
+  padding: 5em 1em 1em 1em;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 0.5em 1em;
 }
 
@@ -192,7 +207,7 @@ img,video {
   margin: 0.5em;
   font-size: 1em;
   align-self: center;
-  color: #000;
+  color: #3b2143;
   text-decoration: underline;
 }
 
@@ -200,7 +215,7 @@ img,video {
   padding: 1em;
   font-size: 1em;
   align-self: center;
-  color: #000;
+  color: #3b2143;
 }
 
 .footer-wrapper {
@@ -209,7 +224,8 @@ img,video {
   align-items: center;
   justify-content: center;
   padding: 2em 3em;
-  background-color: aquamarine;
+  background: linear-gradient(#69f4ab,#69f4ab);
+  color: #3b2143;
 }
 
 .footer-social-links {
@@ -222,7 +238,7 @@ img,video {
   padding: 0.5em;
   border-radius: 100%;
   background-color: #fff;
-  color: aquamarine;
+  color: #69f4ab;
   margin: 0 0.1em;
 }
 
