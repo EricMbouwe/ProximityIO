@@ -6,8 +6,10 @@
 
 body {
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  min-width: 350px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-width: 200px;
+  overflow-x: hidden;
 }
 
 ul,
@@ -17,12 +19,12 @@ a {
   list-style-type: none;
 }
 
-img,video {
+img,
+video {
   width: 100%;
   height: auto;
   max-width: 150%;
 }
-
 
 /*COLORS*/
 /* :root {
@@ -78,9 +80,13 @@ img,video {
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 1em 1em;
   z-index: 10;
+  color: #fff;
+}
+
+.navbar a {
   color: #fff;
 }
 
@@ -222,8 +228,13 @@ img,video {
 }
 
 footer {
-  background: rgb(16,231,200);
-  background: linear-gradient(90deg, rgba(16,231,200,1) 0%, rgba(16,202,216,1) 60%, rgba(16,172,231,1) 100%);
+  background: rgb(16, 231, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 231, 200, 1) 0%,
+    rgba(16, 202, 216, 1) 60%,
+    rgba(16, 172, 231, 1) 100%
+  );
 }
 
 .footer-wrapper {
@@ -238,14 +249,13 @@ footer {
 .footer-social-links {
   order: 1;
   padding: 1em;
-
 }
 
 .footer-social-links a {
   padding: 0.5em;
   border-radius: 100%;
   background-color: #fff;
-  color: rgba(16,202,216,1);
+  color: rgba(16, 202, 216, 1);
   margin: 0 0.1em;
 }
 
@@ -256,7 +266,7 @@ footer {
   padding: 0.5em;
 }
 
-.copyright  span {
+.copyright span {
   text-decoration: underline;
 }
 
@@ -277,6 +287,11 @@ footer {
     right: 0;
     left: 0;
     z-index: 10;
+  }
+
+  .navbar h2 {
+    font-size: 2em;
+    font-weight: 700;
   }
 
   .desktop-nav {
@@ -305,7 +320,7 @@ footer {
     color: #000;
   }
 
-  .links-wrapper li:nth-child(6){
+  .links-wrapper li:nth-child(6) {
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -325,9 +340,11 @@ footer {
     bottom: 2.5em;
   }
 
-  .content-wrapper,.footer-wrapper {
+  .content-wrapper,
+  .footer-wrapper {
     width: 88%;
     margin: 0 auto;
+    max-width: 1400px;
   }
 
   #how-we-do-it h3 {
@@ -361,13 +378,13 @@ footer {
   .case a {
     font-size: 0.5em;
   }
-  
+
   #business-problems .work-link {
     padding: 0;
     margin-top: 2em;
     font-size: 0.8em;
   }
-  
+
   .return-top-link {
     padding: 1em;
     margin-bottom: 1em;
@@ -376,21 +393,27 @@ footer {
   }
 
   footer {
-    background: rgb(237,22,185);
-    background: linear-gradient(90deg, rgba(237,22,185,1) 0%, rgba(255,252,0,1) 100%);
+    background: rgb(237, 22, 185);
+    background: linear-gradient(
+      90deg,
+      rgba(237, 22, 185, 1) 0%,
+      rgba(255, 252, 0, 1) 100%
+    );
   }
 
   .footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em 0;    
+    padding: 2em 0;
   }
 
   .copyright {
     order: 1;
+    flex: 1;
+    text-align: left;
   }
 
   .footer-social-links a {
-    color: rgba(255,252,0,1);
+    color: rgba(255, 252, 0, 1);
   }
 }
