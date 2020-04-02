@@ -86,6 +86,9 @@ img,video {
 
 .desktop-nav {
   display: none;
+}
+
+.mobile-nav {
   text-transform: capitalize;
 }
 
@@ -138,7 +141,7 @@ img,video {
 }
 
 #how-we-do-it h3 {
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
   margin-bottom: 0.5em;
   font-size: 1.8em;
   color: #3b2143;
@@ -218,13 +221,17 @@ img,video {
   color: #3b2143;
 }
 
+footer {
+  background: rgb(16,231,200);
+  background: linear-gradient(90deg, rgba(16,231,200,1) 0%, rgba(16,202,216,1) 60%, rgba(16,172,231,1) 100%);
+}
+
 .footer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2em 3em;
-  background: linear-gradient(#69f4ab,#69f4ab);
   color: #3b2143;
 }
 
@@ -238,7 +245,7 @@ img,video {
   padding: 0.5em;
   border-radius: 100%;
   background-color: #fff;
-  color: #69f4ab;
+  color: rgba(16,202,216,1);
   margin: 0 0.1em;
 }
 
@@ -255,7 +262,7 @@ img,video {
 
 @media (min-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .navbar {
@@ -274,11 +281,11 @@ img,video {
 
   .desktop-nav {
     display: block;
+    text-transform: capitalize;
   }
 
   .mobile-nav {
     display: none;
-    text-transform: capitalize;
   }
 
   .links-wrapper {
@@ -287,6 +294,15 @@ img,video {
 
   .link-item {
     margin-left: 1em;
+  }
+
+  .link-item a {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .link-item a:hover {
+    color: #000;
   }
 
   .links-wrapper li:nth-child(6){
@@ -307,5 +323,74 @@ img,video {
   .arrow-down {
     position: absolute;
     bottom: 2.5em;
+  }
+
+  .content-wrapper,.footer-wrapper {
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  #how-we-do-it h3 {
+    width: 35%;
+  }
+
+  #how-we-do-it p {
+    filter: none;
+    font-size: 1.35em;
+    padding: 3.5em 3em 0 3em;
+    top: -8em;
+  }
+
+  .cases {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .case {
+    padding: 6em 1.5em 1.5em 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0;
+    width: 49%;
+  }
+
+  .case p {
+    width: 60%;
+  }
+
+  .case a {
+    font-size: 0.5em;
+  }
+  
+  #business-problems .work-link {
+    padding: 0;
+    margin-top: 2em;
+    font-size: 0.8em;
+  }
+  
+  .return-top-link {
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    align-self: flex-end;
+  }
+
+  footer {
+    background: rgb(237,22,185);
+    background: linear-gradient(90deg, rgba(237,22,185,1) 0%, rgba(255,252,0,1) 100%);
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 0;    
+  }
+
+  .copyright {
+    order: 1;
+  }
+
+  .footer-social-links a {
+    color: rgba(255,252,0,1);
   }
 }
