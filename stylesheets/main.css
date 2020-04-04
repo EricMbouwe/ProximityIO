@@ -150,9 +150,10 @@ video {
   padding-bottom: 1.5em;
   margin-bottom: 0.5em;
   font-size: 1.7em;
+  line-height: 24px;
   color: #3b2143;
   font-weight: normal;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -165,7 +166,7 @@ video {
   background-color: #fff;
   font-size: 1.1em;
   color: #3b2143;
-  filter: blur(0.03em);
+  filter: blur(0.01em);
 }
 
 #business-problems {
