@@ -165,7 +165,7 @@ video {
   margin: 0 auto;
   background-color: #fff;
   font-size: 1.2em;
-  line-height: 30px;
+  line-height: 28px;
   color: #3b2143;
   filter: blur(0.01em);
 }
@@ -224,9 +224,10 @@ video {
 
 .return-top-link {
   padding: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   align-self: center;
   color: #3b2143;
+  margin-bottom: 1em;
 }
 
 footer {
