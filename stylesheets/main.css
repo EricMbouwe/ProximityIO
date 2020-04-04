@@ -81,7 +81,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 1em;
+  padding: 1em 2em;
   z-index: 10;
   color: #fff;
 }
@@ -132,7 +132,7 @@ video {
 
 #how-we-do-it {
   position: relative;
-  padding-top: 4em;
+  padding-top: 3.5em;
   text-align: center;
 }
 
@@ -149,7 +149,7 @@ video {
 #how-we-do-it h3 {
   padding-bottom: 1.5em;
   margin-bottom: 0.5em;
-  font-size: 1.8em;
+  font-size: 1.7em;
   color: #3b2143;
   font-weight: normal;
   width: 80%;
@@ -163,7 +163,7 @@ video {
   width: 90%;
   margin: 0 auto;
   background-color: #fff;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #3b2143;
   filter: blur(0.03em);
 }

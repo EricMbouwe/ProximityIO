@@ -2,6 +2,7 @@
 
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20EricMbouwe-Click%20to%20Contact-brightgreen)](mailto:consult.ericmbouwe@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/EricMbouwe?label=Follow%20EricMbouwe%20on%20Twitter&style=social)](https://twitter.com/EricMbouwe)
 
+> This is the homepage of Proximity IO
 
 ## Built With
 
@@ -11,7 +12,7 @@
 
 ## Live Demo
 
-[Live Link](https://raw.githack.com/EricMbouwe/Test-Front-ProximityIO/development/index.html)
+[Live Link](proximityio.netlify.com)
 
 ## Getting Started
 
