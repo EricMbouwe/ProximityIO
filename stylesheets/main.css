@@ -352,11 +352,13 @@ footer {
 
   #how-we-do-it h3 {
     width: 35%;
+    line-height: 45px;
   }
 
   #how-we-do-it p {
     filter: none;
     font-size: 1.35em;
+    line-height: 36px;
     padding: 3.5em 3em 0 3em;
     top: -8em;
   }
@@ -407,13 +409,14 @@ footer {
   .footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em 0;
+    padding: 1.5em 0;
   }
 
   .copyright {
     order: 1;
     flex: 1;
     text-align: left;
+    font-size: 0.8em;
   }
 
   .footer-social-links a {
