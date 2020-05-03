@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-width: 200px;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 17em;
+  max-width: 150%;
+  object-fit: cover;
+}
+
+video {
+  width: 100%;
+  height: 26.5em;
+  object-fit: cover;
+}
+
+.video-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  height: fit-content;
+  margin: auto;
+  padding: 2.5em 0.87em;
+  font-size: 1em;
+  font-weight: 700;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  z-index: 10;
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  text-transform: capitalize;
+}
+
+.dropdown-btn {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 6.5em 1em;
+  top: 100%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  min-width: 10em;
+  background-color: #fff;
+  color: #000;
+  z-index: 2;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 1em;
+  font-size: 1em;
+  color: #fff;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#how-we-do-it {
+  position: relative;
+  padding-top: 3.5em;
+  text-align: center;
+}
+
+#how-we-do-it h2 {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 0.88em;
+  color: #ff0000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+#how-we-do-it h3 {
+  padding-bottom: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
+  line-height: 36px;
+  color: #3b2143;
+  font-weight: normal;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#how-we-do-it p {
+  position: relative;
+  top: -50px;
+  padding: 2em;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #3b2143;
+  filter: blur(0.01em);
+}
+
+#business-problems {
+  display: flex;
+  flex-direction: column;
+}
+
+.pencil {
+  height: 80px;
+  width: 80px;
+  align-self: center;
+}
+
+#business-problems h2 {
+  padding: 1em;
+  margin: 0.5em;
+  font-size: 0.88em;
+  color: #ff0000;
+  align-self: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+.cases {
+  display: flex;
+  flex-direction: column;
+}
+
+.case {
+  background-color: gray;
+  padding: 5em 1em 1em 1em;
+  color: #fff;
+  font-size: 1.3em;
+  margin: 0.5em 1em;
+}
+
+.case a {
+  text-decoration: underline;
+  font-size: 0.6em;
+  color: #fff;
+}
+
+#business-problems .work-link {
+  padding: 1em;
+  margin: 0.5em;
+  font-size: 1em;
+  align-self: center;
+  color: #3b2143;
+  text-decoration: underline;
+}
+
+.return-top-link {
+  padding: 1em;
+  font-size: 0.9em;
+  align-self: center;
+  color: #3b2143;
+  margin-bottom: 1em;
+}
+
+footer {
+  background: rgb(16, 231, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 231, 200, 1) 0%,
+    rgba(16, 202, 216, 1) 60%,
+    rgba(16, 172, 231, 1) 100%
+  );
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 3em;
+  color: #3b2143;
+}
+
+.footer-social-links {
+  order: 1;
+  padding: 1em;
+}
+
+.footer-social-links a {
+  padding: 0.5em;
+  border-radius: 100%;
+  background-color: #fff;
+  color: rgba(16, 202, 216, 1);
+  margin: 0 0.1em;
+}
+
+.copyright {
+  order: 2;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 0.5em;
+}
+
+.copyright span {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    max-width: 150%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 6%;
+    background-color: transparent;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .navbar h2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .desktop-nav {
+    display: block;
+    text-transform: capitalize;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .links-wrapper {
+    display: flex;
+  }
+
+  .link-item {
+    margin-left: 1em;
+  }
+
+  .link-item a {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .link-item a:hover {
+    color: #000;
+  }
+
+  .links-wrapper li:nth-child(6) {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .center-content {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 50%;
+    max-width: 80%;
+    padding: 1em;
+    font-size: 25px;
+    height: fit-content;
+  }
+
+  .arrow-down {
+    position: absolute;
+    bottom: 2.5em;
+  }
+
+  .content-wrapper,
+  .footer-wrapper {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  #how-we-do-it h3 {
+    width: 35%;
+    max-width: 60%;
+    line-height: 45px;
+  }
+
+  #how-we-do-it p {
+    filter: none;
+    font-size: 1.35em;
+    line-height: 36px;
+    padding: 3.5em 3em 0 3em;
+    top: -8em;
+  }
+
+  .cases {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .case {
+    padding: 6em 1.5em 1.5em 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0;
+    width: 49%;
+  }
+
+  .case p {
+    width: 60%;
+  }
+
+  .case a {
+    font-size: 0.5em;
+  }
+
+  #business-problems .work-link {
+    padding: 0;
+    margin-top: 2em;
+    font-size: 0.8em;
+  }
+
+  .return-top-link {
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    align-self: flex-end;
+  }
+
+  footer {
+    background: rgb(237, 22, 185);
+    background: linear-gradient(
+      90deg,
+      rgba(237, 22, 185, 1) 0%,
+      rgb(247, 243, 4) 100%
+    );
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5em 0;
+  }
+
+  .copyright {
+    order: 1;
+    flex: 1;
+    text-align: left;
+    font-size: 0.8em;
+  }
+
+  .footer-social-links a {
+    color: rgba(255, 252, 0, 1);
+  }
+}
